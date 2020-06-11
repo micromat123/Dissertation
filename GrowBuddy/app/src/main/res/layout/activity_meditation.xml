@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Meditation"
+    android:orientation="vertical"
+    android:background="@color/myYellow"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:id="@+id/btn_2Mins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:text="2 mins"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="96dp"
+            android:background="@color/myRed"/>
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="5dp"
+            android:text="clear"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/shown_Time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/shown_Time"
+            android:background="@color/myRed"/>
+
+        <Button
+            android:id="@+id/btn_5mins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginStart="110dp"
+            android:text="5 Mins"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btn_2Mins"
+            android:background="@color/myRed"/>
+
+        <Button
+            android:id="@+id/btn_25Mins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="25 Mins"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btn_10Mins"
+            android:background="@color/myRed"/>
+
+        <Button
+            android:id="@+id/btn_10Mins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="110dp"
+            android:layout_marginRight="110dp"
+            android:text="10 Mins"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btn_5mins"
+            android:background="@color/myRed"/>
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            app:layout_constraintTop_toBottomOf="@+id/shown_Time">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Meditation Techniques:\nThere are many different ways of meditating and it can be hard to know which method is best for your current mental state.\n\n - Focus on your breathing: Slow your breathing. Focus on the speed; until you reach a consistent slow pace. Inhale.....Exhale....\n\n - Body Possitioning: There are several beneficial body positions for meditation however they all work on a personal basis. The main concern is comfort. Find a relaxing compfortable position. Try to keep your back straight and head up to promote easy breathing, and a smooth flow of energy.\n\n - Mental State: The main aim of meditation is to care for your mental health. Pause and think, why are you stressed. Take the rest of the time to let this issue go. Currently, that issue doesnt matter.\n\n - Appreciate your current space: Take inspiration and stillness from the garden around you.">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:weightSum="1"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="Custom Timer\n\nFeel free to set your own timer!" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <Button
+                android:id="@+id/button_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button"
+                tools:layout_editor_absoluteX="96dp"
+                tools:layout_editor_absoluteY="379dp" />
+
+            <Button
+                android:id="@+id/button_start_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:weightSum="2"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+            <EditText
+                android:id="@+id/edit_text_input"
+                android:layout_width="131dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/text_view_countdown"
+                android:layout_width="295dp"
+                android:layout_height="197dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="2"
+                android:text="00:00"
+                android:textSize="100dp"
+                android:textColor="@color/myPurple"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/shown_Time"
+            android:layout_width="295dp"
+            android:layout_height="157dp"
+            android:layout_marginTop="5dp"
+            android:text="00:00"
+            android:textSize="100dp"
+            android:textColor="@color/myPurple"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.108"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_5mins" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

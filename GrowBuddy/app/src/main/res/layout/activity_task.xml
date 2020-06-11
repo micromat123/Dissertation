@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="2"
+    android:background="@color/myYellow"
+    tools:context=".PlantList">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="wrap_content"
+            android:layout_height="355dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/taskName"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="132dp"
+            tools:ignore="MissingConstraints"></ListView>
+
+        <Button
+            android:id="@+id/btn_Remove"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="121dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="300dp"
+            tools:layout_editor_absoluteY="657dp"></Button>
+
+        <Button
+            android:id="@+id/btn_Add"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="183dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="180dp"
+            tools:layout_editor_absoluteY="145dp"></Button>
+
+        <EditText
+            android:id="@+id/taskName"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="141dp"
+            android:layout_marginStart="141dp"
+            android:layout_marginTop="160dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="180dp"
+            tools:layout_editor_absoluteY="226dp"
+            android:hint="Task Name">
+
+
+        </EditText>
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

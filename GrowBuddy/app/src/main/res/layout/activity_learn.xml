@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Learn"
+    android:background="@color/myYellow">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/learn_Title"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Learn"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Hello! Please take some time to look at some beginner gardening tips and tricks. Once you feel you have learned enough, don't hesitate to visit other sites for detils!"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Beginner Plants"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="When begining gardening, it can be hard choosing which plants you want for your garden.  Below we will list a range of different fruits, vegetables and flowers to help you on your journey!"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/strawb"
+                android:layout_width="279dp"
+                android:layout_height="279dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/strawberry">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="75dp"
+                android:layout_weight="1"
+                android:text="Strawberries \n\nStawberries are a great beginner fruit to start gardening. The best part is they preproduce from a single plant meaning you will have strawberries forever!"
+                android:textSize="15dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="18dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="How to care for strawberries:\n\nPlanting: Strawberries have shallow roots. Make a hole deep enough to cover roots, whilst leaving the crown revealed (Small leaves at the top of the roots) strawberries 30-45cm\n\nCare:Strawberries are very resilient, however insects may be attracted to your delicious goodies. Apply a drop of dish soap to a bottle of water to prevent plants from being infested.\n\nWatering:\n Water generously once a day."
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="279dp"
+                android:layout_height="279dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/tomato" />
+
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="75dp"
+                android:layout_weight="1"
+
+                android:text="Tomatoes:\n\nTomatoes are an amazing beginner plant for anyone trying to grow some vegetables. They come in a range of colours and sizes!"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How to care for Tomatoes:\nPlanting:\nTomatoes need lots of sun, plant young plants in a sunny area of your plot!\nCare:\nTomatoes are very delicate! Be careful when interacting with leaves and branches!\nWatering:\nWater genttly before flowering. Once flowered, provide a large ammont of water!"
+                android:textSize="15dp"
+                tools:layout_editor_absoluteX="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="279dp"
+                android:layout_height="279dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+
+                app:srcCompat="@drawable/nigella"></ImageView>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75dp"
+                android:layout_weight="1"
+                android:text="Nigella:\n Nigella is a beautiful starter flower which provides its owners with a smell that matches its beauty"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="How to care for Nigella:\nPlanting\nNigellas are incredibly versatile allowing them to grow in most soils. Spread seed/ young plants a 3-4 inches apart in a shady location.\nCare:\nNigellas are very versatile allowing them to be happy in most locations! To keep petals as long as possible, provide some shade in sunnier seasons!\nWatering:\nNigellas dont need too much water however the more water provided, the better the smell produced." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="3">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@color/myPurple"
+                android:text="Buy Plants"
+                android:textSize="10sp"
+                android:onClick="buy"/>
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="2"
+                android:background="@color/myPurple"
+                android:text="Equipment"
+                android:textSize="10dp"
+                android:onClick="equipment"/>
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="3"
+                android:background="@color/myPurple"
+                android:text="Planting Care"
+                android:textSize="10sp"
+               android:onClick="plantCare" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="5 Gardening tips and Tricks:\nThere are many useful gardening tips and tricks . Below we will list 5 that should help you on your way to becoming a professional gardener.\n\nGerminating Seeds:\nIf you want to get the most out of gardening, learning how to germinate seeds is a useful technique. An effective way of doing this is creating a minuature greenhouse.\n - Sew seeds in some pottng soil\n - Apply enough water to make most of the surrounding soil moist\n - Cover pot with cling film or a clear object\nThis should speed up the germination process and ensure a higher success rate. (Notice water gathering at the top of the clear plastic, this should drip down and keep seedlings satisfied)\n\nWatering:\nWatering is probably the task you will be completing the most in your garden. There are mny different ways and reasons forwatering so it is important that users you understand how much water each plant needs. A universal rule for watering is to wait untill the sun is low. This is because the combination of heat and water can actually damage your plants! Try to water at points where the sun is low or the temperature is not hot.\n\nDealing with Bugs:\nAphids are a common uk parasite affecting a large handful of fruit and veg. It can be disheartening\n\nPruning:\nSometimes it can be hard to kow when and when not to interfere with your growing plants. An effective way of tackling overgrown plants is to prune them.\nWhen to Prune?\nPruning is supposed to be done at the end ofthe season. This is to avoid knocking off any fruit or blossems.\nHow to Prune?\nWhen pruning, there are 3 general rules:\n - Prune branches that touch or are growing in to each other. This promotes healthy growth and lowers the chance of infection.\n - " />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
